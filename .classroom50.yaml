@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "ds112"
+assignment: "portfolio"
+owner:
+  username: "emcunni0718"
+  id: 326281625
+  accepted_at: "2026-09-08T02:00:54Z"
+source:
+  owner: "mac-ds112-f26"
+  owner_id: 323651608
+  repo: "portfolio-template"
+  branch: "main"
