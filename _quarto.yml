@@ -72,12 +72,13 @@ book:
     - part: "Pre-Class Learnings"
       chapters:
       - pcl/pcl.qmd
-      - ica/quarto-demo.qmd
+
 
     - part: "In-Class Activities"
       chapters:
       - ica/ica-sample1.qmd
       - ica/ica-sample2.qmd
+      - ica/quarto-demo.qmd
 
     - part: "Extras"
       chapters:
