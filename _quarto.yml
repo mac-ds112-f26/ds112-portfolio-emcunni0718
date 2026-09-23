@@ -80,6 +80,8 @@ book:
       - ica/ica-sample2.qmd
       - ica/quarto-demo.qmd
       - ica/03-univariate-viz-exercises.qmd
+      - ica/04-bivariate-viz-excercises.qmd
+
 
 
     - part: "Extras"
