@@ -37,7 +37,7 @@ We'll address the above questions using `ggplot` tools. Try running the followin
 
 ```{r}
 # Use the ggplot function
-ggplot(hikes, aes(x = rating))
+#ggplot(hikes, aes(x = rating))
 ```
 
 In order to use `ggplot` tools, we have to first *load* the `tidyverse` package in which they live. We've *installed* the package but we need to tell R when we want to *use* it. Run the chunk below to load the library. You'll need to do this within any .qmd file that uses `ggplot()`.
@@ -331,7 +331,7 @@ Practice your viz skills to learn about some of the variables in one of the foll
 
 ```{r}
 # Data on students in this class
-survey <- read.csv("../data/survey.csv")
+survey <- read.csv("https://hash-mac.github.io/ds112site-f26/data/survey.csv")
 
 # World Cup data
 world_cup <- read.csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-11-29/worldcups.csv")
