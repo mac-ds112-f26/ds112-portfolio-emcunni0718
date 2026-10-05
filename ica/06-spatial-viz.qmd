@@ -534,7 +534,7 @@ ggplot(elections_by_state, aes(map_id = state_name, fill = repub_20_categories))
 ### ✏️ Name Choropleth Geom
 
 We used `geom_sf()` for point maps.
-What `geom` do we use for choropleth maps?
+What `geom` do we use for choropleth maps? Geom_sf
 
 ### ✏️ Map Counties with Choropleth
 
