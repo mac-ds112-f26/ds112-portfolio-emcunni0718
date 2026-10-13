@@ -23,8 +23,8 @@ number-depth: 2
 book:
   title: "COMP/STAT112 Portfolio"
   author: "Emma Cunningham"
-  date: 10/5/2026  # use today to update date published based on last time project was edited
-  date-format: full4
+  date: 10/12/2026  # use today to update date published based on last time project was edited
+  date-format: 10/12/2026
   # favicon: path/to/favorite-logo.png
   reader-mode: true
   # site-url: https://site-url
@@ -83,6 +83,9 @@ book:
       - ica/04-bivariate-viz-exercises.qmd
       - ica/05-multivariate-viz.qmd
       - ica/06-spatial-viz.qmd
+      - ica/08-wrangling-verbs.qmd
+
+
 
 
 
