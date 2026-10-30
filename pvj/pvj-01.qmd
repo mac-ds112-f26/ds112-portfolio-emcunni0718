@@ -2,4 +2,16 @@
 title: "Personal Visualization Journey"
 ---
 
-Add content here
+```{r}
+library(tidyverse)
+
+# Import the CSV file
+step_data <- read_csv("Steps.csv")
+
+step_data <- step_data %>% 
+  rename(date = 1, steps = Actual) %>% 
+  mutate(date = mdy(date))
+
+head(step_data)
+```
+

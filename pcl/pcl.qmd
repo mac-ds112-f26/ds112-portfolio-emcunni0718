@@ -8,4 +8,13 @@ title: "Pre-Class Learning Summaries"
 
 ## Quarto
 
-![from qmd4sci.njtierney.com](0810-quarto.jpeg)
+![from qmd4sci.njtierney.com](0810-quarto.jpeg) \## Notes
+
+## Notes 
+
+![](Data_Sci_PCL-images-0.jpg)
+![](Data_Sci_PCL-images-1.jpg)
+![](Data_Sci_PCL-images-2.jpg)
+![](Data_Sci_PCL-images-3.jpg)
+
+
