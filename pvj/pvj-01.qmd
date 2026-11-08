@@ -34,7 +34,7 @@ ggplot(plot_data, aes(x = date, y = steps)) +
   scale_y_continuous(labels = scales::comma) +
   scale_x_date(date_labels = "%b %Y", date_breaks = "2 months") +
   labs(
-    title = "Weekly Step Counts Across Seasons",
+    title = "Weekly Step Counts Across Seasons (2025-2026)",
     x = "Date",
     y = "Total Steps"
   ) +
