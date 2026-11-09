@@ -70,3 +70,6 @@ _freeze/
 *.log
 *.aux
 *.toc
+.Rproj.user/
+.Rproj.user - Copy/
+*.Rproj.user
