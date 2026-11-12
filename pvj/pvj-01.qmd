@@ -2,4 +2,60 @@
 title: "Personal Visualization Journey"
 ---
 
-Add content here
+```{r}
+library(tidyverse)
+
+# Import the CSV file
+step_data <- read_csv("Steps.csv")
+
+step_data <- step_data %>% 
+  rename(date = 1, steps = Actual) %>% 
+  mutate(date = mdy(date))
+
+head(step_data)
+```
+```{r}
+library(tidyverse)
+
+plot_data <- step_data |>
+  mutate(
+    month_num = month(date),
+    season = case_when(
+      month_num %in% c(12, 1, 2)  ~ "Winter",
+      month_num %in% c(3, 4, 5)   ~ "Spring",
+      month_num %in% c(6, 7, 8)   ~ "Summer",
+      month_num %in% c(9, 10, 11) ~ "Fall"
+    ) |> factor(levels = c("Winter", "Spring", "Summer", "Fall"))
+  )
+
+ ggplot(plot_data, aes(x = date, y = steps)) +
+  geom_line(color = "grey30", linewidth = 0.7) +
+  geom_point(aes(color = season), size = 2.3, alpha = 0.9) +
+  
+  scale_color_manual(
+    name = "Season",
+    values = c(
+      "Winter" = "#2B8CBE",  # Crisp blue
+      "Spring" = "#2CA25F",  # Fresh green
+      "Summer" = "#E69F00",  # Warm golden yellow
+      "Fall"   = "#D95F02"   # Burnt orange
+    )
+  ) +
+  
+  scale_y_continuous(labels = scales::comma) +
+  scale_x_date(date_labels = "%b %Y", date_breaks = "2 months") +
+  labs(
+    title = "Weekly Step Counts Across Seasons (2025-2026)",
+    x = NULL, # "Date" is self-explanatory from "Jan 2025", etc.
+    y = "Total Steps"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(color = "grey90", linewidth = 0.4),
+    legend.position = "top" )
+
+```
+
